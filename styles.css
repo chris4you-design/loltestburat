@@ -1,5 +1,8 @@
 /* Add transparent background with overlay text for entire page */
-body {
+
+
+
+body.login-page, body.signup-page {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -90,11 +93,12 @@ button:hover {
     border-radius: 8px;
 }
 
+/* burat ni earl */
 .product img {
-    width: 200px; /* Ensures the image width adapts properly */
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+    width: 300px; /* Ensures the image width adapts properly */
+    height: 300px;
+    object-fit: 79;
+    border-radius: 1px;
 }
 
 .product h3 {
@@ -121,4 +125,27 @@ button:hover {
 
 .product button:hover {
     background-color: #555;
+}
+
+
+
+
+/* General styling for all input fields */
+.checkout-form input[type="text"],
+.checkout-form input[type="tel"],
+.checkout-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px; /* Ensures consistent font size */
+}
+
+/* Align labels and inputs consistently */
+.checkout-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
 }
